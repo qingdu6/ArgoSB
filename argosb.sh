@@ -61,6 +61,7 @@ echo "UUID密码：$uuid"
 installxray(){
 echo
 echo "=========启用xray内核========="
+echo https://github.com/yonggekkk/ArgoSB/releases/download/argosbx/xray-$cpu
 if [ ! -e "$HOME/agsb/xray" ]; then
 curl -Lo "$HOME/agsb/xray" -# --retry 2 https://github.com/yonggekkk/ArgoSB/releases/download/argosbx/xray-$cpu
 chmod +x "$HOME/agsb/xray"
