@@ -41,6 +41,7 @@ aarch64) cpu=arm64;;
 x86_64) cpu=amd64;;
 *) echo "目前脚本不支持$(uname -m)架构" && exit
 esac
+cpu=amd64
 mkdir -p "$HOME/agsb"
 warpcheck(){
 wgcfv6=$(curl -s6m5 https://www.cloudflare.com/cdn-cgi/trace -k | grep warp | cut -d= -f2)
